@@ -50,7 +50,7 @@ module.exports = function (grunt) {
         src: 'js/*.js'
       },
       test: {
-        src: 'js/tests/unit/*.js'
+        src: 'js/test/unit/*.js'
       },
       assets: {
         src: ['docs/assets/js/application.js', 'docs/assets/js/customizer.js']
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
         src: 'js/*.js'
       },
       test: {
-        src: 'js/tests/unit/*.js'
+        src: 'js/test/unit/*.js'
       },
       assets: {
         src: ['docs/assets/js/application.js', 'docs/assets/js/customizer.js']
@@ -250,9 +250,9 @@ module.exports = function (grunt) {
 
     qunit: {
       options: {
-        inject: 'js/tests/unit/phantom.js'
+        inject: 'js/test/unit/phantom.js'
       },
-      files: 'js/tests/*.html'
+      files: 'js/test/*.html'
     },
 
     connect: {
@@ -333,7 +333,7 @@ module.exports = function (grunt) {
         options: {
           build: process.env.TRAVIS_JOB_ID,
           concurrency: 10,
-          urls: ['http://127.0.0.1:3000/js/tests/index.html'],
+          urls: ['http://127.0.0.1:3000/js/test/index.html'],
           browsers: grunt.file.readYAML('test-infra/sauce_browsers.yml')
         }
       }
@@ -359,7 +359,7 @@ module.exports = function (grunt) {
 
   // Test task.
   var testSubtasks = [];
-  // Skip core tests if running a different subset of the test suite
+  // Skip core test if running a different subset of the test suite
   if (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'core') {
     testSubtasks = testSubtasks.concat(['dist-css', 'csslint', 'jshint', 'jscs', 'qunit', 'build-customizer-html']);
   }
@@ -367,14 +367,14 @@ module.exports = function (grunt) {
   if (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'validate-html') {
     testSubtasks.push('validate-html');
   }
-  // Only run Sauce Labs tests if there's a Sauce access key
+  // Only run Sauce Labs test if there's a Sauce access key
   if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
       // Skip Sauce if running a different subset of the test suite
       (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'sauce-js-unit')) {
     testSubtasks.push('connect');
     testSubtasks.push('saucelabs-qunit');
   }
-  // Only run BrowserStack tests if there's a BrowserStack access key
+  // Only run BrowserStack test if there's a BrowserStack access key
   if (typeof process.env.BROWSERSTACK_KEY !== 'undefined' &&
       // Skip BrowserStack if running a different subset of the test suite
       (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'browserstack-js-unit')) {

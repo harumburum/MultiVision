@@ -1,0 +1,20 @@
+div(ng-controller="mvNavbarLoginCtrl")
+    form.navbar-form.navbar-right(role="form", ng-hide="identity.isAuthenticated()")
+        .form-group
+            input.form-control(placeholder="Email", ng-model="username", type="email")
+        .form-group
+            input.form-control(placeholder="Password", type="password", ng-model="password")
+        button.btn.btn-primary(ng-click="signin(username, password)") Sign In
+        a.btn.btn.btn-success(href="signup") Sign Up
+    ul.nav.navbar-nav.navbar-right(ng-hide="!identity.isAuthenticated()")
+        li.dropdown
+            a.dropdown-toggle(data-toggle="dropdown") {{ identity.currentUser.firstName + ' ' + identiry.currentUser.lastName }}
+                b.caret
+            ul.dropdown-menu
+                li(ng-show="identity.currentUser.isAdmin()")
+                    a(href="/users") User Admin
+                li
+                    a(href="/#", ng-click="signout()") Sign Out
+                li
+                    a(href="/profile") Profile
+

@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-',
+1 verbose cli   'g',
+1 verbose cli   'karma' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json MultiVision@0.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ '-', null ]
+8 verbose cache add name=undefined spec="-" args=["-",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '-',
+9 verbose parsed url   path: '-',
+9 verbose parsed url   href: '-' }
+10 verbose cache add [ 'g', null ]
+11 verbose cache add name=undefined spec="g" args=["g",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'g',
+12 verbose parsed url   path: 'g',
+12 verbose parsed url   href: 'g' }
+13 verbose cache add [ 'karma', null ]
+14 verbose cache add name=undefined spec="karma" args=["karma",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'karma',
+15 verbose parsed url   path: 'karma',
+15 verbose parsed url   href: 'karma' }
+16 silly lockFile 3bc15c8a- -
+17 verbose lock - C:\Users\Vova\AppData\Roaming\npm-cache\3bc15c8a-.lock
+18 silly lockFile 54fd1711-g g
+19 verbose lock g C:\Users\Vova\AppData\Roaming\npm-cache\54fd1711-g.lock
+20 silly lockFile 512423cb-karma karma
+21 verbose lock karma C:\Users\Vova\AppData\Roaming\npm-cache\512423cb-karma.lock
+22 silly lockFile 3bc15c8a- -
+23 silly lockFile 3bc15c8a- -
+24 silly lockFile 54fd1711-g g
+25 silly lockFile 54fd1711-g g
+26 silly lockFile 512423cb-karma karma
+27 silly lockFile 512423cb-karma karma
+28 verbose addNamed [ '-', '' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile c75fe0d4- -@
+31 verbose lock -@ C:\Users\Vova\AppData\Roaming\npm-cache\c75fe0d4-.lock
+32 verbose addNamed [ 'g', '' ]
+33 verbose addNamed [ null, '*' ]
+34 silly lockFile 8b047e1f-g g@
+35 verbose lock g@ C:\Users\Vova\AppData\Roaming\npm-cache\8b047e1f-g.lock
+36 verbose addNamed [ 'karma', '' ]
+37 verbose addNamed [ null, '*' ]
+38 silly lockFile cd7961bb-karma karma@
+39 verbose lock karma@ C:\Users\Vova\AppData\Roaming\npm-cache\cd7961bb-karma.lock
+40 silly addNameRange { name: '-', range: '*', hasData: false }
+41 verbose url raw -
+42 verbose url resolving [ 'https://registry.npmjs.org/', './-' ]
+43 verbose url resolved https://registry.npmjs.org/-
+44 info trying registry request attempt 1 at 20:47:35
+45 http GET https://registry.npmjs.org/-
+46 silly addNameRange { name: 'g', range: '*', hasData: false }
+47 silly addNameRange { name: 'karma', range: '*', hasData: false }
+48 verbose url raw g
+49 verbose url resolving [ 'https://registry.npmjs.org/', './g' ]
+50 verbose url resolved https://registry.npmjs.org/g
+51 info trying registry request attempt 1 at 20:47:35
+52 http GET https://registry.npmjs.org/g
+53 verbose url raw karma
+54 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+55 verbose url resolved https://registry.npmjs.org/karma
+56 info trying registry request attempt 1 at 20:47:35
+57 verbose etag "955O05CFGIN4Y9MRGD0ZHSPTZ"
+58 http GET https://registry.npmjs.org/karma
+59 http 200 https://registry.npmjs.org/g
+60 silly registry.get cb [ 200,
+60 silly registry.get   { date: 'Sat, 22 Feb 2014 18:47:31 GMT',
+60 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+60 silly registry.get     etag: '"5NBO69PU6AFQ4NY2MB6QUZ9VC"',
+60 silly registry.get     'content-type': 'application/json',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     'cache-control': 'max-age=1',
+60 silly registry.get     'content-length': '3048',
+60 silly registry.get     'accept-ranges': 'bytes',
+60 silly registry.get     age: '304',
+60 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-fra1222-FRA',
+60 silly registry.get     'x-cache': 'MISS, MISS',
+60 silly registry.get     'x-cache-hits': '0, 0',
+60 silly registry.get     'x-timer': 'S1393094851.412755489,VS0,VS3,VE14,VE109',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     'keep-alive': 'timeout=10, max=50',
+60 silly registry.get     connection: 'Keep-Alive' } ]
+61 http 304 https://registry.npmjs.org/karma
+62 silly registry.get cb [ 304,
+62 silly registry.get   { date: 'Sat, 22 Feb 2014 18:47:31 GMT',
+62 silly registry.get     server: 'Apache',
+62 silly registry.get     connection: 'Keep-Alive',
+62 silly registry.get     'keep-alive': 'timeout=10, max=50',
+62 silly registry.get     etag: '"955O05CFGIN4Y9MRGD0ZHSPTZ"',
+62 silly registry.get     'cache-control': 'max-age=1',
+62 silly registry.get     vary: 'Accept' } ]
+63 verbose etag karma from cache
+64 http 404 https://registry.npmjs.org/-
+65 silly registry.get cb [ 404,
+65 silly registry.get   { date: 'Sat, 22 Feb 2014 18:47:31 GMT',
+65 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+65 silly registry.get     'content-type': 'application/json',
+65 silly registry.get     via: '1.1 varnish',
+65 silly registry.get     'cache-control': 'max-age=0',
+65 silly registry.get     'content-length': '52',
+65 silly registry.get     'accept-ranges': 'bytes',
+65 silly registry.get     age: '0',
+65 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-fra1235-FRA',
+65 silly registry.get     'x-cache': 'MISS, MISS',
+65 silly registry.get     'x-cache-hits': '0, 0',
+65 silly registry.get     'x-timer': 'S1393094851.416398287,VS0,VS-7,VE17,VE123',
+65 silly registry.get     'keep-alive': 'timeout=10, max=50',
+65 silly registry.get     connection: 'Keep-Alive' } ]
+66 silly lockFile c75fe0d4- -@
+67 silly lockFile c75fe0d4- -@
+68 error Error: not_found document not found: -
+68 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:275:14)
+68 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:123:22)
+68 error     at Request.EventEmitter.emit (events.js:98:17)
+68 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:893:14)
+68 error     at Request.EventEmitter.emit (events.js:117:20)
+68 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:844:12)
+68 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+68 error     at _stream_readable.js:920:16
+68 error     at process._tickCallback (node.js:415:13)
+69 error If you need help, you may report this *entire* log,
+69 error including the npm and node versions, at:
+69 error     <http://github.com/isaacs/npm/issues>
+70 error System Windows_NT 6.2.9200
+71 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-" "g" "karma"
+72 error cwd c:\Projects\Personal\Courses\MultiVision
+73 error node -v v0.10.25
+74 error npm -v 1.3.24
+75 verbose exit [ 1, true ]
